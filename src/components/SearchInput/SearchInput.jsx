@@ -54,6 +54,7 @@ const SearchInput = ({ styles }) => {
 
   useEffect(() => {
     dispatch(action(debouncedQuery.toLowerCase()));
+    // eslint-disable-next-line
   }, [dispatch, debouncedQuery]);
 
   const handleSubmit = e => {
