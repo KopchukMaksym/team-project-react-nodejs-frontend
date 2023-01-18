@@ -1,5 +1,5 @@
 export const URL = {
-  BASE: 'https://spontaneous-mandazi-305114.netlify.app',
+  BASE: 'https://spontaneous-mandazi-305114.netlify.app/api',
   USERS: '/users',
   NOTICES: '/notices',
   FRIENDS: '/ours_friends',
