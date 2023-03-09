@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from "react-router-dom";
 
 import { persistedStore, store } from './store';
 import { ModalProvider } from './components/ModalRework';
@@ -17,11 +17,11 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate persistor={persistedStore}>
-        <BrowserRouter>
+        <HashRouter>
           <ModalProvider>
             <App />
           </ModalProvider>
-        </BrowserRouter>
+        </HashRouter>
       </PersistGate>
     </Provider>
   </React.StrictMode>
